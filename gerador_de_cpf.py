@@ -1,3 +1,5 @@
+import re
+
 def calcula_digito(resto):
     if resto>=2:
         return 11 - resto
@@ -14,6 +16,7 @@ def calcula_soma(cpf):
     return soma
 
 cpf_inserido = input("Digite o cpf. Somente números, sem pontos nem traços.\n")
+cpf_inserido = re.sub(r'[^0-9]','',cpf_inserido)
 
 cpf_valido = cpf_inserido[0:9]
 
