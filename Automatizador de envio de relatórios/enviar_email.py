@@ -9,7 +9,7 @@ def enviar_email(faturamento, quantidade):
     # pag.press('enter') #abre o navegador
     # pag.click(x=-1428, y=67)
     pag.hotkey('ctrl','t')
-     pag.hotkey('ctrl','e')
+    pag.hotkey('ctrl','e')
     pag.write('gmail.com')
     pag.press('enter')
     time.sleep(5)
