@@ -19,5 +19,5 @@ def download():
     pag.click(x=-258, y=190) #clica nos 3 pontos
     pag.click(x=-554, y=708) #clica em download
     time.sleep(2)
-    pag.click(x=-1275, y=60) #clica na barra de endereço do explorador de arquivos
     pag.press('enter')
+    pag.hotkey('alt','f4')

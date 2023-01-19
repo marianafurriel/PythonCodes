@@ -1,7 +1,9 @@
-import pandas as ps
-import numpy as np
-import openpyxl as opx
+import pandas as pd
+# import numpy as np
+# import openpyxl as opx
 
-def calcular_indicadores():
-    nome_user = 'maria'
-    tabela = ps.read_excel(r"C:\Users\maria\Downloads\Vendas - Dez.xlsx")
+def calcular_indicadores(): #queremos o faturamento e a quantidade de produtos vendidos
+    tabela = pd.read_excel(r"C:\Users\maria\Downloads\Vendas - Dez.xlsx")
+    faturamento = tabela['Valor Final'].sum()
+    quantidade = tabela['Quantidade'].sum()
+    return faturamento,quantidade
