@@ -20,8 +20,4 @@ def download():
     pag.click(x=-554, y=708) #clica em download
     time.sleep(2)
     pag.click(x=-1275, y=60) #clica na barra de endereço do explorador de arquivos
-    pag.hotkey('ctrl','c') #copia o endereço onde vai salvar o arquivo
     pag.press('enter')
-    pag.press('enter')
-    caminho = pyperclip.paste()
-    return caminho
