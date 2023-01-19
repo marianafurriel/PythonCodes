@@ -20,11 +20,12 @@ def enviar_email(faturamento, quantidade):
     pag.hotkey('ctrl','v')
     pag.press('tab')
     texto = f"""Prezados, bom dia!
-O faturamento do último mês foi de: {faturamento}.
-A quantidade de produtos vendida foi: {quantidade}.
+O faturamento do último mês foi de: R${faturamento:,.2f}.
+A quantidade de produtos vendida foi: {quantidade:,}.
 Abraços,
 Mariana."""
     pyperclip.copy(texto)
     pag.hotkey('ctrl','v')
     time.sleep(10)
     pag.hotkey('ctrl','enter')
+    pag.click(x=-1533, y=953)
