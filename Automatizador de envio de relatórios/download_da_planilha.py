@@ -20,4 +20,3 @@ def download():
     pag.click(x=-554, y=708) #clica em download
     time.sleep(2)
     pag.press('enter')
-    pag.hotkey('alt','f4')
