@@ -22,8 +22,11 @@ print(tabela['Churn'].value_counts(normalize=True)) #mostra quanto de cada valor
 
 #achando os motivos dos cancelamentos
 
-#comparar cada coluna com a coluna Churn
-coluna = "TipoContrato"
-grafico = px.histogram(tabela, x=coluna, color="Churn") #cria o gráfico
+#comparar cada coluna com a coluna Churn #para cada coluna da tabela criar um gráfico
 
-grafico.show() #exibe o grafico
+for coluna in tabela.columns:
+    print(coluna)
+    grafico = px.histogram(tabela, x=coluna, color="Churn",text_auto=True) #cria o gráfico
+    grafico.show() #exibe o grafico
+    
+# coluna = "TipoContrato"
