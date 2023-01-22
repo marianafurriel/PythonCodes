@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-def cotacoes():
+def pega_cotacoes():
     navegador = webdriver.Chrome() #cria o navegador controlado pelo selenium
     #cotação do dolar
     navegador.get("https://www.google.com")
