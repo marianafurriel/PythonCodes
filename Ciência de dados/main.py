@@ -10,8 +10,6 @@ def main():
     modelo = ia.inteligencia_artificial(tabela)
     previsao = modelo.predict(nova_tabela)
     print(previsao)
-    # y_teste, previsao_arvoredecisao, previsao_regressaolinear = ia.inteligencia_artificial(tabela)
-    # tabela_auxiliar = vp.visualizar_previsoes_testes(y_teste, previsao_arvoredecisao, previsao_regressaolinear)
-
+    
 if __name__ == '__main__':
    main()
