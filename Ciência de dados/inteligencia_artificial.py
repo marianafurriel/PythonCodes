@@ -21,6 +21,6 @@ def inteligencia_artificial(tabela):
 
     previsao_regressaolinear = modelo_regressaolinear.predict(x_teste)
     previsao_arvoredecisao = modelo_arvoredecisao.predict(x_teste)
-    print("regressao linear:" ,r2_score(y_teste,previsao_regressaolinear))
-    print("arvore de decisao:",r2_score(y_teste,previsao_arvoredecisao))
-    return y_teste,previsao_regressaolinear,previsao_regressaolinear
+    # print("regressao linear:" ,r2_score(y_teste,previsao_regressaolinear))
+    # print("arvore de decisao:",r2_score(y_teste,previsao_arvoredecisao))
+    return y_teste,previsao_arvoredecisao,previsao_regressaolinear
